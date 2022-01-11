@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && npm run concat",
+    "build": "ng build && npm run concat && copyfiles -f src/plugin.json dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "concat": "concat -o dist/plugin.js dist/runtime.js dist/polyfills.js dist/main.js",
@@ -18,6 +18,7 @@
     "@angular/elements": "^13.1.1",
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
+    "copyfiles": "^2.4.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
