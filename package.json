@@ -3,11 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build && npm run concat && copyfiles -f src/plugin.json dist",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "concat": "concat -o dist/plugin.js dist/runtime.js dist/polyfills.js dist/main.js"
+    "build": "ng build && npm run concat && copyfiles -f src/plugin.json dist && del-cli dist/index.html",
+    "concat": "concat -o dist/plugin.js dist/runtime.js dist/polyfills.js dist/main.js",
+    "tester": "zyllio ./dist plugin.js custom-counter"
   },
   "private": true,
   "dependencies": {
@@ -17,19 +15,20 @@
     "@angular/elements": "^14.1.2",
     "@angular/platform-browser": "^14.1.2",
     "@angular/platform-browser-dynamic": "^14.1.2",
-    "copyfiles": "^2.4.1",
+    "del-cli": "^5.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@zyllio/zy-sdk": "latest",
-    "@zyllio/zy-cli": "latest",
     "@angular-devkit/build-angular": "^14.1.2",
     "@angular/cli": "^14.1.2",
     "@angular/compiler-cli": "^14.1.2",
     "@types/node": "^12.11.1",
+    "@zyllio/zy-cli": "latest",
+    "@zyllio/zy-sdk": "latest",
     "concat": "^1.0.3",
+    "copyfiles": "^2.4.1",
     "typescript": "~4.7.4"
   }
 }
