@@ -7,8 +7,7 @@
     "build": "ng build && npm run concat && copyfiles -f src/plugin.json dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "concat": "concat -o dist/plugin.js dist/runtime.js dist/polyfills.js dist/main.js",
-    "deploy": "lt --port 3000"
+    "concat": "concat -o dist/plugin.js dist/runtime.js dist/polyfills.js dist/main.js"
   },
   "private": true,
   "dependencies": {
@@ -24,8 +23,8 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "localtunnel": "^2.0.2",
-    "@zyllio/zy-sdk": "0.0.10",
+    "@zyllio/zy-sdk": "latest",
+    "@zyllio/zy-cli": "latest",
     "@angular-devkit/build-angular": "~13.1.2",
     "@angular/cli": "~13.1.2",
     "@angular/compiler-cli": "~13.1.0",

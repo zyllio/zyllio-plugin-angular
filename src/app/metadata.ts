@@ -21,21 +21,9 @@ export const CounterMetadata: ComponentMetadataModel = {
     main: true
   }],
   styles: [{
-    id: 'width',
-    name: 'Width',
-    type: 'width',
-    default: '340px'
-  },
-  {
-    id: 'height',
-    name: 'Height',
-    type: 'height',
-    default: '60px'
-  }, {
     id: '--color',
     name: 'Color',
     type: 'color',
     default: '#fca311'
-  }  
-  ]
+  }]
 }
