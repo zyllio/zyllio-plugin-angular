@@ -11,7 +11,6 @@ export const CounterMetadata: ComponentMetadataModel = {
   category: 'Plugins',
   subCategory: 'Counters',
   hidden: false,
-  keepRatio: false,
   properties: [{
     id: 'value',
     name: 'Value',
