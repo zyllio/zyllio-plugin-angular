@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnChanges, SimpleChanges, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewEncapsulation } from '@angular/core';
 
 @Component({
   templateUrl: './app.component.html',
@@ -9,13 +9,13 @@ export class AppComponent implements OnChanges {
   
   @Input('data-value') dataValue!: string
 
+  counter!: Promise<string>
+  
   constructor(private elementRef: ElementRef) {
   }
-
-  ngOnChanges(changes: SimpleChanges): void {
-  }
   
-  async getCounter() {    
-    return await zySdk.services.component.getPropertyValueAsText(this.elementRef.nativeElement, 'value')
+  ngOnChanges(changes: SimpleChanges): void {
+    this.counter = zySdk.services.component.getPropertyValueAsText(this.elementRef.nativeElement, 'value')
   }
+
 }

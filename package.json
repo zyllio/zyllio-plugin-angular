@@ -5,7 +5,7 @@
     "ng": "ng",
     "build": "ng build && npm run concat && copyfiles -f src/plugin.json dist && del-cli dist/index.html",
     "concat": "concat -o dist/plugin.js dist/runtime.js dist/polyfills.js dist/main.js",
-    "tester": "zyllio ./dist plugin.js custom-counter"
+    "tester": "zyllio ./dist plugin.js custom-angular-counter"
   },
   "private": true,
   "dependencies": {
