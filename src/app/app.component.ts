@@ -15,7 +15,7 @@ export class AppComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
   }
   
-  getCounter(): string {    
-    return zySdk.services.component.getPropertyValueAsText(this.elementRef.nativeElement, 'value')
+  async getCounter() {    
+    return await zySdk.services.component.getPropertyValueAsText(this.elementRef.nativeElement, 'value')
   }
 }

@@ -5,7 +5,7 @@ const Icon = `
 `;
 
 export const CounterMetadata: ComponentMetadataModel = {
-  id: 'custom-counter',
+  id: 'custom-angular-counter',
   icon: Icon,
   label: 'Angular Counter',
   category: 'Plugins',
