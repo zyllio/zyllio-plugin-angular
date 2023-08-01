@@ -1,7 +1,16 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { createApplication } from '@angular/platform-browser';
+import { AppComponent } from './app/app.component';
+import { createCustomElement } from '@angular/elements';
+import { CounterMetadata } from './app/metadata';
 
-import { AppModule } from './app/app.module';
+const run = async () => {
+  
+  const applicationRef = await createApplication()
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+  const CounterComponent = createCustomElement(AppComponent, { injector: applicationRef.injector })
+
+  zySdk.services.registry.registerComponent(CounterMetadata, CounterComponent)
+
+}
+
+run()

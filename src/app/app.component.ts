@@ -1,9 +1,15 @@
-import { Component, ElementRef, Input, OnChanges, SimpleChanges, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, Injector, Input, OnChanges, SimpleChanges, ViewEncapsulation } from '@angular/core';
+import { createCustomElement } from '@angular/elements';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.ShadowDom
+  standalone: true,
+  encapsulation: ViewEncapsulation.ShadowDom,
+  imports: [
+    BrowserModule
+  ],
 })
 export class AppComponent implements OnChanges {
   
@@ -11,7 +17,7 @@ export class AppComponent implements OnChanges {
 
   counter!: Promise<string>
   
-  constructor(private elementRef: ElementRef) {
+  constructor(private elementRef: ElementRef) {    
   }
   
   ngOnChanges(changes: SimpleChanges): void {
