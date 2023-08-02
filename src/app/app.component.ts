@@ -1,6 +1,6 @@
-import { Component, ElementRef, Injector, Input, OnChanges, SimpleChanges, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation, signal } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { PropertyValueModel, StaticPropertyValueModel } from '@zyllio/zy-sdk';
+import { ComponentService } from './component.service';
 
 @Component({
   templateUrl: './app.component.html',
@@ -11,28 +11,23 @@ import { PropertyValueModel, StaticPropertyValueModel } from '@zyllio/zy-sdk';
     BrowserModule
   ],
 })
-export class AppComponent implements OnChanges {
+export class AppComponent {
 
-  counter = 0
+  counter = signal(0)
 
   @Input('data-value')
-  set dataValue(propertyValue: object) {
-
-    console.log("pv ", propertyValue);
-
-    const value = (propertyValue as StaticPropertyValueModel).value
- console.log("value ", value);
-
-    this.counter = parseInt(value)
+  set dataValue(propertyValue: string) {
+    this.setValue(propertyValue)
   }
 
-
-  constructor(private elementRef: ElementRef) {
+  constructor(private componentService: ComponentService) {
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
+  async setValue(attributeValue: string) {
 
-    // this.counter = zySdk.services.component.getPropertyValueAsText(this.elementRef.nativeElement, 'value')
+    const value = await this.componentService.getValueFromAttribute(attributeValue) as string
+
+    this.counter.set(parseInt(value))
+
   }
-
 }
