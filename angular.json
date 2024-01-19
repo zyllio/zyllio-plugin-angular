@@ -46,7 +46,9 @@
               ],
               "fileReplacements": [
               ],
-              "outputHashing": "none"
+              "outputHashing": "none",
+              "extractLicenses": false,
+              "vendorChunk": false
             },
             "development": {
               "buildOptimizer": false,
@@ -63,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "zyllio-plugin-angular:build:production"
+              "buildTarget": "zyllio-plugin-angular:build:production"
             },
             "development": {
-              "browserTarget": "zyllio-plugin-angular:build:development"
+              "buildTarget": "zyllio-plugin-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "zyllio-plugin-angular:build"
+            "buildTarget": "zyllio-plugin-angular:build"
           }
         }        
       }

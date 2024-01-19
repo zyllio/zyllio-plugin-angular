@@ -1,7 +1,7 @@
 import { createApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { createCustomElement } from '@angular/elements';
-import { CounterMetadata } from './app/metadata';
+import { TimelineMetadata } from './app/metadata';
 
 const run = async () => {
   
@@ -9,7 +9,7 @@ const run = async () => {
 
   const CounterComponent = createCustomElement(AppComponent, { injector: applicationRef.injector })
 
-  zySdk.services.registry.registerComponent(CounterMetadata, CounterComponent)
+  zySdk.services.registry.registerComponent(TimelineMetadata, CounterComponent)
 
 }
 

@@ -1,7 +1,7 @@
 {
-  "name": "Angular Counter Component",
+  "name": "Angular Timeline Component",
   "version": "1.1.0",
-  "description": "This plugins provides a Angular Counter Component",
+  "description": "This plugins provides a Angular Timeline Component",
   "company": "Zyllio team",
   "icon": "https://studio.zyllio.com/assets/icon.png"
 }
