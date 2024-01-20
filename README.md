@@ -1,6 +1,6 @@
-# Zyllio Plugin Angular : Counter
+# Zyllio Plugin Angular : Timeline
 
-This Zyllio plugin is a Counter Component implemented using [Angular](https://angular.io/)
+This Zyllio plugin is a Timeline Component implemented using [Angular](https://angular.io/)
 
 # Demonstration
 

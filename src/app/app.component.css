@@ -2,10 +2,34 @@
   width: 100%;
   height: 80px;
   padding: 10px;
-  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-size: 20px;
 }
 
-.counter {
-  font-size: 40px;
-  color: var(--color);
-} 
+.items {
+  padding: 10px;
+  box-sizing: border-box;  
+}
+
+.item {
+  display: flex;
+  gap: 5px;
+  border-left: 2px solid var(--theme-primary-color);
+}
+
+.bullet {
+  width: 20px;
+  height: 20px;
+  background-color: var(--theme-primary-color);
+  border-radius: 50%;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  
+}
