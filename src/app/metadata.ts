@@ -28,6 +28,18 @@ export const TimelineMetadata: ComponentMetadataModel = {
     tootip: 'The table being used to populate',
     default: '',
     main: true
+  }, {
+    id: 'date',
+    name: 'Date',
+    type: 'column',
+    tootip: '',
+    default: ''
+  }, {
+    id: 'label',
+    name: 'Label',
+    type: 'column',
+    tootip: '',
+    default: ''
   }],
   styles: [{
     id: '--color',
