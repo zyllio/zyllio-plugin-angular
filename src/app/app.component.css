@@ -14,22 +14,44 @@
 .item {
   display: flex;
   gap: 5px;
-  border-left: 2px solid var(--theme-primary-color);
 }
 
 .bullet {
   width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: var(--theme-primary-color);
   border-radius: 50%;
+}
+
+.container {
+  position: relative;
+  left: -16px;
+  border-left: 2px solid var(--theme-primary-color);
+  padding-left: 31px;
+  padding-bottom: 33px;
+  flex-grow: 1;
 }
 
 .texts {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.texts.selected {
+  background-color: var(--theme-secondary-color);
+  color: var(--theme-secondary-text-color);
 }
 
 .label {
-  
+  opacity: 0.9;
+  font-size: 0.9em;
+}
+
+.item:last-child .container {
+  border: none;
 }

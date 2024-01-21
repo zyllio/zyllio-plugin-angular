@@ -8,7 +8,7 @@ This Zyllio plugin is a Timeline Component implemented using [Angular](https://a
 
 # Development environment
 
-To build this plugin, Node.js 14+ is required
+To build this plugin, Node.js 18+ is required
 
 # Experiment
 

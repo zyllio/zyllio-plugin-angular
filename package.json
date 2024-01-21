@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build && npm run concat && copyfiles -f src/plugin.json dist && del-cli dist/index.html",
+    "build": "ng build && npm run concat && copyfiles -f src/sample.json dist && copyfiles -f src/plugin.json dist && del-cli dist/index.html",
     "concat": "concat -o dist/plugin.js dist/runtime.js dist/polyfills.js dist/main.js",
     "tester": "zyllio ./dist plugin.js plugin-timeline"
   },
