@@ -28,6 +28,5 @@ export class AppComponent {
     this.selected.emit({ selection })
 
     this.clicked.emit()
-
   }
 }

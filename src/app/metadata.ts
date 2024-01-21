@@ -19,7 +19,8 @@ export const TimelineMetadata: ComponentMetadataModel = {
     name: 'Selection',
     type: 'row-variable',
     tootip: '',
-    default: ''
+    default: '',
+    write: true
   }, {
     id: 'data',
     name: 'Table',
