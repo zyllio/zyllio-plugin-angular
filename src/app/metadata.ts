@@ -40,6 +40,18 @@ export const TimelineMetadata: ComponentMetadataModel = {
     type: 'column',
     tootip: '',
     default: ''
+  }, {
+    id: 'filter',
+    name: 'Filter',
+    type: 'filter',
+    tootip: 'Filter the table rows',
+    default: ''
+  }, {
+    id: 'sort',
+    name: 'Sort',
+    type: 'sort',
+    tootip: 'Sort the table rows',
+    default: ''
   }],
   styles: [{
     id: '--color',
