@@ -36,7 +36,8 @@
 .texts {
   display: flex;
   flex-direction: column;
-  gap: 4px;  
+  gap: 4px;
+  background-color: var(--theme-tertiary-color);
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
