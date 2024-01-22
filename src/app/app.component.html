@@ -7,7 +7,7 @@
       <div class="bullet"></div>
 
       <div class="container">
-        <div class="texts" [class.selected]="item === selection" (click)="select(item)">
+        <div class="texts" [class.selected]="item._id === selection._id" (click)="select(item)">
           <div class="date">{{ item['date']}}</div>
           <div class="label">{{ item['label']}}</div>
         </div>
