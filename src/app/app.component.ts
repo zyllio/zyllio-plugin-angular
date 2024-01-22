@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   
   @Input() data!: ListItemsModel
   
-  @Input() selection!: ListItemModel 
+  @Input() selection: ListItemModel | undefined 
   
   @Output() selected = new EventEmitter<{ selection: ListItemModel }>()
   
