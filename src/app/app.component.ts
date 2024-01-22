@@ -16,12 +16,13 @@ export class AppComponent implements OnInit {
   @Input() data!: ListItemsModel
   
   @Input() selection!: ListItemModel 
-
+  
   @Output() selected = new EventEmitter<{ selection: ListItemModel }>()
-
+  
   @Output() clicked = new EventEmitter<void>()
   
   ngOnInit(): void {
+    console.log('selection', this.selection)
     
  console.log("this.data ", this.data);
   }
