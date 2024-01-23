@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ListItemModel, ListItemsModel } from '@zyllio/zy-sdk';
+import { ListColumnItemModel, ListColumnItemsModel, ListItemModel } from '@zyllio/zy-sdk';
 
 @Component({
   templateUrl: './app.component.html',
@@ -13,9 +13,9 @@ import { ListItemModel, ListItemsModel } from '@zyllio/zy-sdk';
 })
 export class AppComponent implements OnInit {
   
-  @Input() data!: ListItemsModel
+  @Input() data!: ListColumnItemsModel
   
-  @Input() selection: ListItemModel | undefined 
+  @Input() selection: ListColumnItemModel | undefined 
   
   @Output() selected = new EventEmitter<{ selection: ListItemModel }>()
   
