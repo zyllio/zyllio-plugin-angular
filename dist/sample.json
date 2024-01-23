@@ -1,23 +1,28 @@
 {
   "items": [{
     "_id": "4",
-    "Date": "2024-02-10",
-    "Label": "No-Code Meetup Paris"
+    "date": "2024-02-10",
+    "label": "No-Code Meetup Paris",
+    "description": "Explore the latest innovations in the world of code-free development and automation"
   }, {
     "_id": "5",
-    "Date": "2024-04-01",
-    "Label": "No-Code Showcase"
+    "date": "2024-04-01",
+    "label": "No-Code Showcase",
+    "description": "Showcasing the latest trends and tools in the world of no-code and low-code technology"
   }, {
     "_id": "6",
-    "Date": "2024-05-11",
-    "Label": "No-Code Meetup London"
+    "date": "2024-05-11",
+    "label": "No-Code Meetup London",
+    "description": "Featuring interactive workshops, keynote speeches from industry leaders, and networking opportunities for professionals"
   }, {
     "_id": "3",
-    "Date": "2023-05-23",
-    "Label": "No-Code Meetup Berlin"
+    "date": "2023-05-23",
+    "label": "No-Code Meetup Berlin",
+    "description": "Discover and discuss the newest advancements in no-code platforms and software"
   }, {
     "_id": "8",
-    "Date": "2023-11-22",
-    "Label": "No-Code Meetup Lyon"
+    "date": "2023-11-22",
+    "label": "No-Code Meetup Lyon",
+    "description": "Seminar focused on empowering entrepreneurs and developers with the latest no-code tools and strategies for efficient digital innovation"
   }]
 }

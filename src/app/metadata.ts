@@ -41,6 +41,12 @@ export const TimelineMetadata: ComponentMetadataModel = {
     tootip: '',
     default: ''
   }, {
+    id: 'description',
+    name: 'Description',
+    type: 'column',
+    tootip: '',
+    default: ''
+  }, {
     id: 'filter',
     name: 'Filter',
     type: 'filter',

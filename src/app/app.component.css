@@ -53,6 +53,10 @@
   font-size: 0.9em;
 }
 
+.description {
+  font-size: 0.8em;
+}
+
 .item:last-child .container {
   border: none;
 }

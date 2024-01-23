@@ -21,10 +21,7 @@ export class AppComponent implements OnInit {
   
   @Output() clicked = new EventEmitter<void>()
   
-  ngOnInit(): void {
-    console.log('selection', this.selection)
-    
- console.log("this.data ", this.data);
+  ngOnInit(): void {    
   }
 
   select(selection: ListItemModel) {
