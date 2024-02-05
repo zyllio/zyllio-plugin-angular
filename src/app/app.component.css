@@ -20,7 +20,7 @@
   width: 20px;
   min-width: 20px;
   height: 20px;
-  background-color: var(--theme-primary-color);
+  background-color: var(--theme-secondary-color);
   border-radius: 50%;
 }
 
