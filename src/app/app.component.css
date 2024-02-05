@@ -9,6 +9,7 @@
 .items {
   padding: 10px;
   box-sizing: border-box;  
+  color: var(--theme-text-color)
 }
 
 .item {
