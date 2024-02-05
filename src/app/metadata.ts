@@ -12,7 +12,7 @@ export const TimelineMetadata: ComponentMetadataModel = {
   icon: Icon,
   label: 'Timeline',
   category: 'Components',
-  subCategory: 'Lists',
+  subCategory: 'Plugins',
   hidden: false,
   properties: [{
     id: 'selection',
