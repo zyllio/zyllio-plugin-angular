@@ -27,7 +27,7 @@
 .container {
   position: relative;
   left: -16px;
-  border-left: 2px solid var(--theme-primary-color);
+  border-left: 2px solid var(--theme-secondary-color);
   padding-left: 31px;
   padding-bottom: 33px;
   flex-grow: 1;
