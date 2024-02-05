@@ -59,10 +59,5 @@ export const TimelineMetadata: ComponentMetadataModel = {
     tootip: 'Sort the table rows',
     default: ''
   }],
-  styles: [{
-    id: '--color',
-    name: 'Color',
-    type: 'color',
-    default: '#fca311'
-  }]
+  styles: []
 }
