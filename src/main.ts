@@ -7,9 +7,9 @@ const run = async () => {
   
   const applicationRef = await createApplication()
 
-  const CounterComponent = createCustomElement(AppComponent, { injector: applicationRef.injector })
+  const TimelineComponent = createCustomElement(AppComponent, { injector: applicationRef.injector })
 
-  zySdk.services.registry.registerComponent(TimelineMetadata, CounterComponent)
+  zySdk.services.registry.registerComponent(TimelineMetadata, TimelineComponent)
 
 }
 

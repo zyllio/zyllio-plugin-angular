@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, input, model, output } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ListColumnItemModel, ListColumnItemsModel, ListItemModel } from '@zyllio/zy-sdk';
+import { ListColumnItemModel, ListColumnItemsModel } from '@zyllio/zy-sdk';
 
 @Component({
   templateUrl: './app.component.html',
@@ -12,18 +12,18 @@ import { ListColumnItemModel, ListColumnItemsModel, ListItemModel } from '@zylli
   ],
 })
 export class AppComponent {
-  
-  @Input() data!: ListColumnItemsModel
-  
-  @Input() selection: ListColumnItemModel | undefined 
-  
-  @Output() selected = new EventEmitter<{ selection: ListItemModel }>()
-  
-  @Output() clicked = new EventEmitter<void>()
-  
-  select(selection: ListItemModel) {
 
-    this.selection = selection
+  data = input<ListColumnItemsModel>()
+
+  selection = model<ListColumnItemModel | undefined>()
+
+  selected = output<{ selection: ListColumnItemModel }>()
+
+  clicked = output<void>()
+
+  select(selection: ListColumnItemModel) {
+
+    this.selection.set(selection)  
 
     this.selected.emit({ selection })
 
