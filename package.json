@@ -4,32 +4,32 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build && npm run concat && copyfiles -f src/sample.json dist && copyfiles -f src/plugin.json dist && del-cli dist/index.html",
-    "concat": "concat -o dist/plugin.js dist/polyfills.js dist/main.js",
+    "concat": "concat -o dist/plugin.js dist/main.js",
     "tester": "zyllio ./dist plugin.js plugin-timeline"
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^18.0.1",
-    "@angular/compiler": "^18.0.1",
-    "@angular/core": "^18.0.1",
-    "@angular/elements": "^18.0.1",
-    "@angular/platform-browser": "^18.0.1",
-    "@angular/platform-browser-dynamic": "^18.0.1",
+    "@angular/common": "^19.0.0",
+    "@angular/compiler": "^19.0.0",
+    "@angular/core": "^19.0.0",
+    "@angular/elements": "^19.0.0",
+    "@angular/platform-browser": "^19.0.0",
+    "@angular/platform-browser-dynamic": "^19.0.0",
     "concat": "^1.0.3",
     "move-file-cli": "^3.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular/build": "^18.0.2",
-    "@angular/cli": "^18.0.2",
-    "@angular/compiler-cli": "^18.0.1",
+    "@angular/build": "^19.0.1",
+    "@angular/cli": "^19.0.1",
+    "@angular/compiler-cli": "^19.0.0",
     "@types/node": "^12.11.1",
     "@zyllio/zy-cli": "latest",
     "@zyllio/zy-sdk": "latest",
     "copyfiles": "^2.4.1",
     "del-cli": "^5.0.0",
-    "typescript": "~5.4.5"
+    "typescript": "~5.6.3"
   }
 }
