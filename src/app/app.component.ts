@@ -7,11 +7,7 @@ import { ListColumnItemModel, ListColumnItemsModel } from '@zyllio/zy-sdk';
   encapsulation: ViewEncapsulation.ShadowDom,
   imports: []
 })
-export class AppComponent implements OnInit {
-  ngOnInit(): void {
-
-    console.log("data ", this.data() );
-  }
+export class AppComponent {
 
   data = input<ListColumnItemsModel>()
 
