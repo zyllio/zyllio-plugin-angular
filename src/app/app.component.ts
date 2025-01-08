@@ -10,7 +10,7 @@ import { ListColumnItemModel, ListColumnItemsModel } from '@zyllio/zy-sdk';
 export class AppComponent implements OnInit {
   ngOnInit(): void {
 
-    console.log("data ", this.data);
+    console.log("data ", this.data() );
   }
 
   data = input<ListColumnItemsModel>()
